@@ -23,7 +23,7 @@
         </tr>
         <tr>
             <td colspan="2">Petugas : {{ Auth()->User()->name }}</td>
-            <td align="right">Tanggal : <?php echo date("Y/m/d"); ?></td>
+            <td align="right">Tanggal : <?php echo date('Y/m/d'); ?></td>
         </tr>
         <tr>
             <td colspan="3">
@@ -48,7 +48,7 @@
         <tr>
             <td> <b>Jumlah Bayar</b> </td>
             <td align="right">:</td>
-            <td>Rp. {{number_format($pembayaran->jumlah_bayar,2,',',',') }}</td>
+            <td>Rp. {{ number_format($pembayaran->jumlah_bayar, 2, ',', ',') }}</td>
         </tr>
         <tr>
             <td colspan="3">
