@@ -16,7 +16,7 @@ class SiswaController extends Controller
 
     public function create()
     {
-        $kelas = Kelas::all();
+        $kelas = Kelas::pluck('nama_kelas', 'id');
         return view('home.siswa.tambah', compact(['kelas']));
     }
 
